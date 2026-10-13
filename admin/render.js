@@ -66,7 +66,7 @@
 
   function header() {
     return '<header>\n  <div class="inner nav">\n' +
-      '    <a class="brand" href="/" aria-label="Y-PLUS 홈"><span class="brand-logo"><img src="/logo.png" alt=""></span><span><b>Y-PLUS</b><small>ONLINE MARKETING</small></span></a>\n' +
+      '    <a class="brand" href="/" aria-label="와이디플러스 홈"><span class="brand-logo"><img src="/logo.png" alt=""></span><span><b>Y-PLUS</b><small>와이디플러스</small></span></a>\n' +
       '    <ul class="menu" id="menu">\n' +
       '      <li><a href="/#about">소개</a></li>\n' +
       '      <li><a href="/#media">서비스상품</a></li>\n' +
@@ -82,7 +82,7 @@
 
   function footer() {
     return '<footer>\n  <div class="inner">\n    <div>\n' +
-      '      <div class="brand"><span class="brand-logo"><img src="/logo.png" alt=""></span><span><b>Y-PLUS</b><small>ONLINE MARKETING</small></span></div>\n' +
+      '      <div class="brand"><span class="brand-logo"><img src="/logo.png" alt=""></span><span><b>Y-PLUS</b><small>와이디플러스</small></span></div>\n' +
       '      <p>(주)JS컴퍼니&amp;흐름컴퍼니 | 대표자 : 박준성 &amp; 손동혁 | 사업자등록번호 : 899-87-04241</p>\n' +
       '      <p>주소 : 인천시 부평구 주부토로 236 테크노밸리 U1센터 B동 912호</p>\n' +
       '      <p>담당 : 유광일 본부장 | 메일 : dakchirau1015@gmail.com | 카카오톡 : uilgg</p>\n' +
@@ -93,7 +93,7 @@
       '      <p>카카오톡 상담은 언제든 남겨 주세요</p>\n' +
       '      <div class="links"><a href="https://yydplus.co.kr/">플레이스·통합 마케팅</a><a href="' + KAKAO + '" target="_blank" rel="noopener">카카오톡 상담</a></div>\n' +
       '    </div>\n  </div>\n</footer>\n' +
-      '<div class="float-bar" id="floatBar"><p><em>채널별 맞춤 무료진단</em>을 해주는 업계 1% 마케터 Y-PLUS</p><a class="btn btn-main" href="/#contact">무료진단 신청</a></div>\n';
+      '<div class="float-bar" id="floatBar"><p><em>채널별 맞춤 무료진단</em>을 해주는 업계 1% 마케터 와이디플러스</p><a class="btn btn-main" href="/#contact">무료진단 신청</a></div>\n';
   }
 
   var commonScript =
@@ -120,7 +120,7 @@
     var tagCount = {};
     list.forEach(function (p) { (p.tags || []).forEach(function (t) { tagCount[t] = (tagCount[t] || 0) + 1; }); });
     var tags = Object.keys(tagCount).sort(function (a, b) { return tagCount[b] - tagCount[a] || (a < b ? -1 : 1); });
-    return head({ title: '게시판 — 유광일 본부장 칼럼 | Y-PLUS 와이플러스', desc: '6년 현업 온라인 마케터 유광일 본부장이 직접 쓰는 쿠팡·스마트스토어·플레이스 마케팅 이야기.', path: '/board/' }) +
+    return head({ title: '게시판 — 유광일 본부장 칼럼 | 와이디플러스', desc: '6년 현업 온라인 마케터 유광일 본부장이 직접 쓰는 쿠팡·스마트스토어·플레이스 마케팅 이야기.', path: '/board/' }) +
       header() +
       '<section class="sub-hero"><div class="inner"><span class="en">COLUMN</span><h1>게시판</h1><p>유광일 본부장이 현장에서 직접 쓰는 온라인 마케팅 이야기</p></div></section>\n' +
       '<div class="inner board">\n' +
@@ -147,7 +147,7 @@
       datePublished: post.date, dateModified: post.updated || post.date,
       author: { '@type': 'Person', name: '유광일' }, mainEntityOfPage: SITE + path
     }).replace(/</g, '\\u003c');
-    return head({ title: post.title + ' | Y-PLUS 게시판', desc: summaryOf(post), path: path, type: 'article', image: coverOf(post),
+    return head({ title: post.title + ' | 와이디플러스', desc: summaryOf(post), path: path, type: 'article', image: coverOf(post),
       extraHead: '<script type="application/ld+json">' + ld + '</script>\n' }) +
       header() +
       '<article class="inner post">\n' +
