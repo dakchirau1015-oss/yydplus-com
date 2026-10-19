@@ -120,4 +120,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://yydplus.com/board/%EC%BF%A0%ED%8C%A1-%EA%B0%80%EA%B5%AC%EB%A7%A4%EB%A1%9C-%EB%A7%9D%EA%B0%80%EC%A7%84%EC%83%81%ED%92%88-%ED%94%8C%EB%9F%AC%EC%8A%A4%EB%A1%9C-%EB%8F%8C%EC%95%84%EC%84%A4%EC%88%98-%EC%97%86%EB%8A%94-%EA%B2%BD/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
